@@ -93,17 +93,13 @@ app.use (bodyParser.json ());
  *  Use the application route manager.
  *  It requires the component routes and enable them for request.
  */
-app.use ('/',           require ('./components/lobby/route'));
-app.use ('/dashboard',  require ('./components/dashboard/route'));
-app.use ('/finance',    require ('./components/finance/route'));
-app.use ('/people',     require ('./components/people/route'));
-
+app.use ('/', require ('./components/document-design/router'));
 
 /**
  *  Use http errors middleware
  *  It handles the requisition error.
  */
-const httpErrors = require ('http-errors');
+const httpErrors = require ('http-errors'); 
 
 app.use ((req, res, next) => {
   next (httpErrors (404));
