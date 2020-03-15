@@ -1,10 +1,8 @@
 /**
- *  Home resources planning. Also known as HRP.
+ *  Build studio.
  *
- *  @link      https://eduardomessias.github.io/hrp/jsdoc.
- *  @file      This file defines the hrp app settings.
+ *  @file      This file defines the app settings.
  *  @author    Eduardo Messias.
- *  @version   1.0.0.
  */
 
 /**
@@ -155,7 +153,7 @@ app.use (function (req, res, next) {
   next ();
 });
 
-console.log ('Build studoi (buildstudio v0.0.1)');
+console.log ('Build studio');
 console.log (`New session started (${new Date()})`);
 
 module.exports = app;
