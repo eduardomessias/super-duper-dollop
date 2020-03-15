@@ -3,5 +3,33 @@ extends view
 block body
   
   h2(style='color: gray') Document design module
-  a(href='')
+  a.btn.border(href='/') Start a new document  
+      
+  .panel.mt-2
+    h3 Current documents (work in progress)
+    table.table.table-bordered
+      thead
+        tr
+          th ID
+          th Title
+          th Creation
+      tbody
+        tr
+          td Fs#001
+          td Home resources planning
+          td Mar 15 2020, 21:32
+          
+  .panel.mt-2
+    h3 Completed documents (done)
+    table.table.table-bordered
+      thead
+        tr
+          th ID
+          th Title
+          th Creation
+      tbody
+        tr
+          td Fs#001
+          td Home resources planning
+          td Mar 15 2020, 21:32
   
