@@ -7,7 +7,8 @@ head
   title Build studio
 
   //link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
-  link(rel="stylesheet" href="/bootswatch/darkly.min.css")
+  block theme
+    link(rel="stylesheet" href="/bootswatch/darkly.min.css")
   
 
   block head
@@ -22,11 +23,15 @@ body
     a.navbar-brand(href='/') Build studio
     
     //Change theme
-    .btn-group.dropleft
-      button.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Change theme
-      .dropdown-menu
-        a.dropdown-item(href='/') Darkly
-        a.dropdown-item(href='/') Sketchy
+    .btn-group
+      .btn-group.dropup(role='group')
+        button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+          span.sr-only Change theme dropleft
+        .dropdown-menu
+          a.dropdown-item(href='/') Darkly
+          a.dropdown-item(href='/') Sketchy
+      button.btn.btn-secondary(type='button') Change theme
+        
     
     
 
