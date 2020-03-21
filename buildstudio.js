@@ -91,7 +91,7 @@ app.use (bodyParser.json ());
  *  Use the application route manager.
  *  It requires the component routes and enable them for request.
  */
-app.use ('/', require ('./components/document-design/router'));
+app.use ('/', require ('./components/home/router'));
 
 /**
  *  Use http errors middleware
