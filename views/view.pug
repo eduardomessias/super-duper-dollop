@@ -12,6 +12,8 @@ head
       link(rel="stylesheet" href="/bootswatch/darkly.min.css")
     when 'sketchy'
       link(rel="stylesheet" href="/bootswatch/sketchy.min.css")
+    default
+      link(rel="stylesheet" href="/bootswatch/darkly.min.css")
   
   block head
   
@@ -31,8 +33,8 @@ body
         button.btn.btn-secondary.dropdown-toggle.dropdown-toggle-split(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
           span.sr-only Change theme dropleft
         .dropdown-menu
-          a.dropdown-item(href='/') Darkly
-          a.dropdown-item(href='/') Sketchy
+          a.dropdown-item(href='/?theme/darkly') Darkly
+          a.dropdown-item(href='/?theme/sketchy') Sketchy
       button.btn.btn-secondary(type='button') Change theme
         
     
