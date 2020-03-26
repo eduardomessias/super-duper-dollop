@@ -1,16 +1,18 @@
 const mongoose = require ('mongoose')
 
 const estimative = new mongoose.Schema({
-    summary: String,
-    method: {
+    ref: String,
+    approach: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'method'
-    }
+      ref: 'approach'
+    },
+    accuracy: Number
 })
 
-const method = new mongoose.Schema({
+const approach = new mongoose.Schema({
     name: String,
-    
+    category: String
 })
 
 module.exports = mongoose.model ('estimative', estimative)
+module.exports = mongoose.model ('approach', approach)
