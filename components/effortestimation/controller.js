@@ -1,5 +1,5 @@
 module.exports = {
   GET: async (req, res, next) => {
-    res.render('estimatives');
+    res.render('effortestimation');
   }
 }

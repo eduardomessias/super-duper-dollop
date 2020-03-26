@@ -92,7 +92,7 @@ app.use (bodyParser.json ());
  *  It requires the component routes and enable them for request.
  */
 app.use ('/', require ('./components/home/router'));
-app.use ('/estimatives', require ('./components/estimatives/router'));
+app.use ('/effortestimation', require ('./components/effortestimation/router'));
 
 /**
  *  Use http errors middleware
