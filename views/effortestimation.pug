@@ -7,4 +7,21 @@ block body
     form
       .form-group
         label(for='ref') Reference
-        input(type='text')
+        input#ref.form-control(type='text' placeholder='Backlog item reference')
+      .form-group
+        label(for='approach') Estimation approach
+        select#approach.form-control
+          option Analogy-based estimation
+          option WBS-based (bottom up) estimation
+          option Parametric models
+          option Size-based estimation models
+          option Group estimation
+          option Mechanical combination
+          option Judgmental combination
+      .form-group
+        label(for='category')
+        select#category.form-control
+          option Formal estimation model
+          option Expert estimation
+          option Combination-based estimation
+        
