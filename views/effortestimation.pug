@@ -1,7 +1,7 @@
 extends view
 
 block body
-  .container-fluid
+  .container
     h1 Software development effort estimation
     
     form
@@ -11,8 +11,8 @@ block body
       .form-group
         label(for='approach') Estimation approach
         select#approach.form-control
-          option Analogy-based estimation
-          option WBS-based (bottom up) estimation
+          option(value='analogy-based') Analogy-based estimation
+          option(value='') WBS-based (bottom up) estimation
           option Parametric models
           option Size-based estimation models
           option Group estimation
