@@ -11,17 +11,19 @@ block body
       .form-group
         label(for='approach') Estimation approach
         select#approach.form-control
-          option(value='analogy-based') Analogy-based estimation
-          option(value='') WBS-based (bottom up) estimation
-          option Parametric models
-          option Size-based estimation models
-          option Group estimation
-          option Mechanical combination
-          option Judgmental combination
+          option(value='analogy') Analogy-based estimation
+          option(value='wbs') WBS-based (bottom up) estimation
+          option(value='parametric') Parametric models
+          option(value='size') Size-based estimation models
+          option(value='group') Group estimation
+          option(value='mechanical') Mechanical combination
+          option(value='judgmental') Judgmental combination
       .form-group
         label(for='category')
         select#category.form-control
-          option Formal estimation model
-          option Expert estimation
-          option Combination-based estimation
+          option(value='formal') Formal estimation model
+          option(value='expert') Expert estimation
+          option(value='combination') Combination-based estimation
+          
+  script(src='js/effortestimation.js')
         
