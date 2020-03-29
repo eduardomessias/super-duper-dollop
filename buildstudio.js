@@ -156,6 +156,6 @@ app.use (function (req, res, next) {
 });
 
 console.log ('Build studio');
-console.log (`New session started (${new Date()})`);
+console.log (`New session started (${new Date()})`); 
 
 module.exports = app;
