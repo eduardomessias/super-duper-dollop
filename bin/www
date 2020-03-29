@@ -1,4 +1,4 @@
-let app = require('/app/buildstudio'); 
+let app = require('../buildstudio'); 
 let debug = require('debug')('build:server');
 let http = require('http');
 

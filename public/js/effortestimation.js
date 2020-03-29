@@ -1,3 +1,10 @@
+$(document).ready( function () {
+  $('table').DataTable({
+    ordering: true,
+    searching: true
+  });
+});
+
 let approach = document.getElementById('approach')
 let category = document.getElementById('category')
 
@@ -20,3 +27,6 @@ approach.onchange = (e) => {
       break;
   }
 }
+
+
+
