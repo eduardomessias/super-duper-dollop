@@ -1,8 +1,16 @@
 extends view
 
 block head
-  script(src='../node_modules/monaco-editor/min/vs/loader.js')
-  script(type='text/javascript').
+  
+
+block body
+  
+  h1 Build studio playground
+  
+  #playground(style="width:800px;height:600px;border:1px solid grey")
+  
+  script(src="requirejs/require.min.js")
+  script.
     require.config({ paths: { 'vs': '../node_modules/monaco-editor/min/vs' }});
 
     require(['vs/editor/editor.main'], function() {
@@ -15,11 +23,5 @@ block head
         language: 'javascript'
       });
     });
-
-block body
-  
-  h1 Build studio playground
-  
-  #playground
   
   
