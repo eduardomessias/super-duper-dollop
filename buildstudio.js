@@ -93,6 +93,7 @@ app.use (bodyParser.json ());
  */
 app.use ('/', require ('./components/home/router'));
 app.use ('/effortestimation', require ('./components/effortestimation/router'));
+app.use ('/playground', require ('./components/playground/router'));
 
 /**
  *  Use http errors middleware

@@ -1,3 +1,5 @@
 module.exports = {
-  GET: async ()
+  GET: async (req, res, next) => {
+    res.render ('playground');
+  }
 }
